@@ -1,0 +1,15 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "A graphql server to serve data from virta test REST API",
+  "main": "index.js",
+  "author": "Sergey Dubovik",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "node-fetch": "^2.6.1"
+  }
+}
