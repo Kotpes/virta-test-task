@@ -1,7 +1,7 @@
-import { GraphQLServer } from 'graphql-yoga';
 import fetch from 'node-fetch';
+require('dotenv').config();
 
-const VIRTA_REST_API = 'https://api.test.virtaglobal.com/stations';
+const VIRTA_REST_API_URL = process.env.VIRTA_API_URL;
 
 type StationType = {
   vendor: string;
@@ -29,8 +29,8 @@ const getStations = async (
   stationId?: string
 ): Promise<Station[] | Station> => {
   const requestUrl = stationId
-    ? `${VIRTA_REST_API}/${stationId}`
-    : `${VIRTA_REST_API}/`;
+    ? `${VIRTA_REST_API_URL}/${stationId}`
+    : `${VIRTA_REST_API_URL}/`;
 
   try {
     const request = await fetch(requestUrl);
@@ -66,12 +66,5 @@ const resolvers = {
     },
   },
 };
-const options = {
-  endpoint: '/graphql',
-  playground: '/playground',
-};
-const server = new GraphQLServer({
-  typeDefs: './schema.graphql',
-  resolvers,
-});
-server.start(options, () => console.log(`Server is running`));
+
+export default resolvers;

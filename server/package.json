@@ -2,15 +2,16 @@
   "name": "graphql-server",
   "version": "1.0.0",
   "description": "A graphql server to serve data from virta test REST API",
-  "main": "index.js",
+  "main": "src/index",
   "author": "Sergey Dubovik",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node index.ts",
-    "build": "npx tsc"
+    "start": "ts-node src/index"
   },
   "dependencies": {
+    "@saeris/apollo-server-vercel": "^0.4.0",
     "@types/node-fetch": "^2.5.7",
+    "dotenv": "^8.2.0",
     "graphql-yoga": "^1.18.3",
     "node-fetch": "^2.6.1",
     "ts-node": "^9.0.0",
