@@ -1,4 +1,5 @@
 import { GraphQLServer } from 'graphql-yoga';
+import { ApolloServer } from 'apollo-server';
 
 import resolvers from '../resolvers';
 import typeDefs from '../typeDefinitions';
@@ -8,13 +9,13 @@ const options = {
   playground: '/playground',
 };
 
-const server = new GraphQLServer({
+const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
 
-server.start(options, () =>
+server.listen().then(({ url }) => {
   console.log(
-    `Server is running at http://localhost:4000 and playground is available at http://localhost:4000/playground`
-  )
-);
+    `Server ready at ${url} and playground is available at ${url}playground`
+  );
+});

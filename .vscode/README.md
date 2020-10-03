@@ -27,4 +27,5 @@ To be continued
 
 ### Notes
 
-There's `api/graphql.ts` used to create a serverless function to run on vercel
+There's `server/api/graphql.ts` used to create a serverless function to run on
+vercel
