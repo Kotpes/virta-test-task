@@ -1,0 +1,23 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(242, 242, 242);
+}
+
+.content {
+  padding-top: 80px;
+  width: 600px;
+}
+
+.main h1 {
+  text-align: left;
+  font-size: 48px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+}

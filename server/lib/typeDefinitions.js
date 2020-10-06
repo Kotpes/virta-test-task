@@ -6,7 +6,7 @@ const typeDefs = `
   type StationType {
     vendor: String
     sockettypes: String
-    connectors: Int
+    connectors: String
     instructions_url: String
   }
 
@@ -26,4 +26,4 @@ const typeDefs = `
   }
 `;
 
-export default typeDefs;
+module.exports = typeDefs;

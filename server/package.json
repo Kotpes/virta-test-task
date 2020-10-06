@@ -1,20 +1,19 @@
 {
-  "name": "graphql-server",
+  "name": "server",
   "version": "1.0.0",
-  "description": "A graphql server to serve data from virta test REST API",
-  "main": "src/index",
-  "author": "Sergey Dubovik",
-  "license": "MIT",
+  "description": "GraphQL server for virta charging stations REST API",
+  "main": "api/index.js",
   "scripts": {
-    "start": "ts-node src/index"
+    "start": "micro"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@saeris/apollo-server-vercel": "^0.4.0",
-    "@types/node-fetch": "^2.5.7",
-    "apollo-server": "^2.18.1",
-    "dotenv": "^8.2.0",
-    "node-fetch": "^2.6.1",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.3"
+    "apollo-server-micro": "^2.18.2",
+    "graphql": "^15.3.0",
+    "micro": "^9.3.4",
+    "micro-cors": "^0.1.1",
+    "node-fetch": "^2.6.1"
   }
 }

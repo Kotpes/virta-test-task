@@ -1,0 +1,34 @@
+.station {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.station:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.stationName {
+  font-weight: bold;
+  font-size: 16px;
+  word-break: break-word;
+  padding-right: 10px;
+}
+
+.availability {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background: rgb(242, 242, 242);
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.availability img {
+  margin-right: 5px;
+}
