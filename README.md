@@ -1,6 +1,6 @@
 ## Client app and GraphQL server for Virta charging stations API
 
-### [Demo](https://vercel)
+### [Demo](https://virta-client.vercel.app)
 
 #### Server setup
 
