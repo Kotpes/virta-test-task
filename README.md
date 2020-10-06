@@ -28,3 +28,5 @@ Client code was bootstrapped using
 To perform GraphQL queries, [swr](https://swr.vercel.app) together with
 [graphql-request](https://github.com/prisma-labs/graphql-request) libraries are
 used.
+
+Client was also deployed to [vercel.com](https://vercel.com)
