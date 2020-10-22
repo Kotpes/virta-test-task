@@ -20,7 +20,13 @@ const query = `
       }
     }
   `
-const fetcher = (query: string) => request(GRAPHQL_URL, query)
+const fetcher = async (query: string) => {
+    try {
+        return await request(GRAPHQL_URL, query)
+    } catch (error) {
+        throw new Error(error)
+    }
+}
 
 export default function Home() {
     const [totalCount, setTotalCount] = useState(0)

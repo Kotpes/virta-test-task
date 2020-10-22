@@ -51,7 +51,6 @@ export default function Station() {
         history.goBack()
     }
 
-
     if (error) {
         return (
             <Layout>
